@@ -8,13 +8,13 @@ require 'config.php';
   <meta charset="UTF-8">
   <title>Home</title>
 <link rel="stylesheet" type="text/css" href="css/main.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
-<div class="container-login100">
+<div class="container-home100">
     <body>
-    <div class="container ">
+    <div class="container">
         <div class="row">
             <div class="col">
-            <a class="btn btn-light" href="home.php" role="button">Voltar</a>
                 <h1 style="text-align: center;">Localização</h1>
                 <iframe width="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d776256.8289309337!2d-49.6091793753557!3d-25.33854861091013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce35351cdb3dd%3A0x6d2f6ba5bacbe809!2sCuritiba%2C%20PR!5e0!3m2!1spt-BR!2sbr!4v1582217281331!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             </div>
@@ -23,8 +23,10 @@ require 'config.php';
             <iframe width="560" height="315" src="https://www.youtube.com/embed/rcnI8C41Odc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div> -->
         </div>
+        <div class="menu">
+        <a class="btn btn-light" href="home.php" role="button">Voltar</a>
+        </div>
     </div>
-
     </body>
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
