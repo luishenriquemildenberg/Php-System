@@ -5,22 +5,21 @@
 <head>
   <meta charset="UTF-8">
   <title>Home</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/main.css" />
 </head>
 <body>
-<div class="porra" style="width: 100%; background-color: orange; height: 15px;">
+
 <div class="container-home100">
   <nav>
     <ul class="menu"> 
-      <a class="btn btn-light" href="select.php" role="button">Usuários</a>
-      <a class="btn btn-light" href="contato.php" role="button">Contato</a>
+      <a class="btn btn-light" href="../select.php" role="button">Usuários</a>
+      <a class="btn btn-light" href="../contato.php" role="button">Contato</a>
       <a class="btn btn-light" href="#" role="button">Sobre-nos</a>
-      <a class="btn btn-light" href="teste.php" role="button">link</a>
-      <a class="btn btn-light" href="index.html" role="button">Sair</a>
+      <a class="btn btn-light" href="../teste.php" role="button">link</a>
+      <a class="btn btn-light" href="../index.html" role="button">Sair</a>
     </ul>
   </nav>
-  </div>
 </div>
 
 

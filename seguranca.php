@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $result = $conn->query($sql); // consultando utiliza o query
 
     if ($result->fetchColumn()) { //
-        header("Location: home.php");
+        header("Location: view/home.php"); // tem que trocar se não for usar o padrão mvc
     }else{
       header ("location: ./");
     }
