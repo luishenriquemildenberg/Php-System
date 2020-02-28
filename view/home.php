@@ -15,7 +15,7 @@
     <ul class="menu"> 
       <a class="btn btn-light" href="../select.php" role="button">Usuários</a>
       <a class="btn btn-light" href="../contato.php" role="button">Contato</a>
-      <a class="btn btn-light" href="#" role="button">Sobre-nos</a>
+      <a class="btn btn-light" href="../sobre.php" role="button">Sobre-nos</a>
       <a class="btn btn-light" href="../teste.php" role="button">link</a>
       <a class="btn btn-light" href="../index.html" role="button">Sair</a>
     </ul>
