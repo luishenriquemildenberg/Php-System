@@ -15,19 +15,20 @@ try {
 
 <div class="container-home100">
 
-    <div class='container pt-4'>
-        <form action="insert.php" method="GET">
-            <table class="table table-sm table-hover">
-                <tr>
-                    <td>Id</td>
-                    <td><b>Nome</td>
-                    <td><b>Sobrenome</td>
-                    <td><b>Email</td>
-                    <td><b>Estado</td>
-                    <td><b>Cidade</td>
-                    <td><b>&nbsp;</td>
-                </tr>
-                <tbody>
+    <div class="container">
+        <div class='container pt-4'>
+            <form action="insert.php" method="GET">
+                <table class="table table-sm table-hover">
+                    <tr>
+                        <td>Id</td>
+                        <td><b>Nome</td>
+                        <td><b>Sobrenome</td>
+                        <td><b>Email</td>
+                        <td><b>Estado</td>
+                        <td><b>Cidade</td>
+                        <td><b>&nbsp;</td>
+                    </tr>
+        </div>
     </div>
     <?php
 
@@ -52,7 +53,7 @@ try {
 
             echo '</tr>';
         }
-    }
+    }   
 
     ?>
     <script>
@@ -71,31 +72,8 @@ try {
     </table>
     </form>
 </div>
-<!-- 
-<html>
-<head>
-<script language="Javascript">
-function confirmacao(id) {
-     var resposta = confirm("Deseja remover esse registro?");
- 
-     if (resposta == true) {
-          window.location.href = "remover.php?id="+id;
-     }
-}
-</script>
-</head>
- 
-<body>
-<a href="javascript:func()"
-onclick="confirmacao('1')">Remover registro #1</a>
- 
-<a href="javascript:func()"
-onclick="confirmacao('2')">Remover registro #2</a>
- 
-<a href="javascript:func()"
-onclick="confirmacao('3')">Remover registro #3</a>
-</body>
-</html> -->
+
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">

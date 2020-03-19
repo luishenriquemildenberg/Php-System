@@ -10,12 +10,12 @@ $cidade = $_POST['cidade'];
 $estado = $_POST['estado'];
 
 $sql = "DELETE FROM usuario WHERE id = '{$id}'";
-    // echo'<pre>';
-    // print_r($sql);
-    // die();
+    echo'<pre>';
+    print_r($sql);
+    //die();
 $pdo=$conn->prepare($sql);
 if($pdo->execute()){
-    header('Location: home.php');
+    header('Location: select.php');
 }else{
     echo 'erro';
 }
