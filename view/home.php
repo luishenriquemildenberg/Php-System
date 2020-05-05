@@ -1,3 +1,4 @@
+<?php include 'header.php'; ?>
 <!DOCTYPE HTML>
 
 <html lang="pt-br">
@@ -8,22 +9,11 @@
   <link rel="stylesheet" type="text/css" href="../css/style.css" />
   <link rel="stylesheet" type="text/css" href="../css/main.css" />
 </head>
+
 <body>
-
-<div class="container-home100">
-  <nav>
-    <ul class="menu"> 
-      <a class="btn btn-light" href="../select.php" role="button">Usuários</a>
-      <a class="btn btn-light" href="../contato.php" role="button">Contato</a>
-      <a class="btn btn-light" href="../sobre.php" role="button">Sobre-nos</a>
-      <a class="btn btn-light" href="../teste.php" role="button">link</a>
-      <a class="btn btn-light" href="../index.html" role="button">Sair</a>
-    </ul>
-  </nav>
-</div>
-
-
-
+  <div>
+    <img src="../img/img_home.jpg" width="100%" height="575">
+  </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

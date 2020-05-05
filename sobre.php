@@ -1,3 +1,4 @@
+<?php include 'view/header.php'; ?>
 <html>
 
 <head>
@@ -5,10 +6,7 @@
     <title>Sobre nós</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
-
 <body>
-    <div class="cabecalho">
-    </div>
     <br>
     <br>
     <div class="container">

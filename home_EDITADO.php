@@ -16,7 +16,7 @@
       <a class="btn btn-light" href="contato.php" role="button">Contato</a>
       <a class="btn btn-light" href="#" role="button">Sobre-nos</a>
       <a class="btn btn-light" href="teste.php" role="button">link</a>
-      <a class="btn btn-light" href="index.html" role="button">Sair</a>
+      <a class="btn btn-light" href="teste.php" role="button">Sair</a>
     </ul>
   </nav>
 </div>

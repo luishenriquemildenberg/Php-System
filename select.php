@@ -1,5 +1,7 @@
 <?php
 require_once 'config.php';
+include 'view/header.php';
+
 try {
 
     $sql = "SELECT * FROM usuario ORDER BY id ";
@@ -14,19 +16,18 @@ try {
 <link rel="stylesheet" type="text/css" href="css/main.css" />
 
 <div class="container-home100">
-
     <div class="container">
         <div class='container pt-4'>
             <form action="insert.php" method="GET">
                 <table class="table table-sm table-hover">
                     <tr>
-                        <td>Id</td>
+                        <td><b>Id</td>
                         <td><b>Nome</td>
                         <td><b>Sobrenome</td>
                         <td><b>Email</td>
                         <td><b>Estado</td>
                         <td><b>Cidade</td>
-                        <td><b>&nbsp;</td>
+                        <td><b>Ações</td>
                     </tr>
         </div>
     </div>
@@ -53,7 +54,7 @@ try {
 
             echo '</tr>';
         }
-    }   
+    }
 
     ?>
     <script>
