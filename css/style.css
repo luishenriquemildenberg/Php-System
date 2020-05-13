@@ -61,3 +61,6 @@ li {
     height: 10px;
     background-color: aquamarine;
 }
+.observacao textarea{
+margin: 0px;
+}

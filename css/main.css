@@ -264,12 +264,22 @@ iframe {
 
 .cssformulario{
   margin: center;
-  background: linear-gradient(to top right, #4d4d4d 4%, #66ccff 100%);
+  background: linear-gradient(to bottom, #ff99cc 0%, #ccccff 100%);
 }
-.cabecalhoformulario{
+/* .cabecalhoformulario{
   width: 100%;
   height: 60px;
   background-color:#e6e6e6;
+} */
+.sticky-top {
+  font-size: 22px;
+  font-family: 'Times New Roman';
+  text-align: center;
+
+}
+
+.form-row{
+  margin: auto;
 }
 
 @-webkit-keyframes anim-shadow {

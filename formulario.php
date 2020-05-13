@@ -3,7 +3,7 @@
 <div class="cssformulario">
     <link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-<form method="POST" action="insert.php">
+<form method="GET" action="insert.php">
          <div class="col-md-4 mb-3">
              <label for="validationDefault01">Nome</label>
              <input type="text" class="form-control" name="nome" id="validationDefault01" required>

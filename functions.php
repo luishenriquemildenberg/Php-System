@@ -1,0 +1,1 @@
+<?php echo date('YY-mm-dd', strtotime($data)); ?>

@@ -12,6 +12,7 @@
         <nav>
         <img src="../img/img-01.png" width="9%" height="74">
           <ul class="menu">
+            <a class="botao" href="../form_cliente.php" role="button">Cadastrar</a>
             <a class="botao" href="../select.php" role="button">Usuários</a>
             <a class="botao" href="../cliente.php" role="button">Clientes</a>
             <a class="botao" href="../sobre.php" role="button">Sobre-nos</a>

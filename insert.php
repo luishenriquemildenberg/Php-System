@@ -1,25 +1,32 @@
+
+
+
 <?php
 require_once 'config.php';
 
 if (isset($_POST['email']) && empty(!$_POST['email'])) {
 
-    $nome  = $_POST['nome'];
-    $sobrenome  = $_POST['sobrenome'];
-    $email = $_POST['email'];
-    $senha = md5(addslashes($_POST['pass']));
-    $cidade  = $_POST['cidade'];
-    $estado  = $_POST['estado'];
+    $nome  = $_GET['nome'];
+    $sobrenome  = $_GET['sobrenome'];
+    $email = $_GET['email'];
+    $senha = md5(addslashes($_GET['pass']));
+    $cidade  = $_GET['cidade'];
+    $estado  = $_GET['estado'];
 
     try {
 
         $sql = "INSERT INTO usuario 
                 (nome, sobrenome, email, pass, cidade, estado) 
-                values 
+                VALUES 
                 ('{$nome}', '{$sobrenome}', '{$email}', '{$senha}', '{$cidade}', '{$estado}')
             ";
 
         $pdo = $conn->prepare($sql);
         $pdo->execute();
+
+        echo'<pre>';
+        print_r($pdo);
+        die;
 
         header("Location: index.html");
     } catch (PDOException $e) {
