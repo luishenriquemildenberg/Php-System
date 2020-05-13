@@ -5,7 +5,7 @@ include 'view/header.php';
 <?php
 try {
 
-    $sql = "SELECT * FROM usuario ORDER BY id ";
+    $sql = "SELECT * FROM cliente ORDER BY id ";
     $pdo = $conn->prepare($sql);
     $pdo->execute();
     $result = $pdo->fetchAll(PDO::FETCH_ASSOC);
@@ -25,9 +25,9 @@ try {
                         <td><b>Id</td>
                         <td><b>Nome</td>
                         <td><b>Sobrenome</td>
-                        <td><b>Email</td>
-                        <td><b>Estado</td>
+                        <td><b>Contato</td>
                         <td><b>Cidade</td>
+                        <td><b>Quantidade</td>
                         <td><b>Ações</td>
                     </tr>
         </div>
@@ -40,18 +40,20 @@ try {
 
 
     if (count($result) > 0) {
-        foreach ($result as $usuario) {
+        foreach ($result as $cliente) {
 
             echo '<tr>';
 
-            echo "<td>{$usuario["id"]}</td>";
-            echo "<td>{$usuario["nome"]}</td>";
-            echo "<td>{$usuario["sobrenome"]}</td>";
-            echo "<td>{$usuario["email"]}</td>";
-            echo "<td>" . utf8_encode(utf8_decode($usuario["estado"])) . "</td>";
-            echo "<td>{$usuario["cidade"]}</td>";
-            echo "<td><a href='seleciona_usuario.php?id=" . $usuario['id'] . "'>Editar</a>";
-            echo "<button type='button' class='btn btn-link' onclick='confirmacao({$usuario['id']});'>Remover registro </button> </td>";
+            echo "<td>{$cliente["id"]}</td>";
+            echo "<td>{$cliente["nome"]}</td>";
+            echo "<td>{$cliente["sobrenome"]}</td>";
+            echo "<td>{$cliente["contato"]}</td>";
+            echo "<td>{$cliente["cidade"]}</td>";
+            echo "<td>{$cliente["qtd"]}</td>";
+            // echo "<td>{$cliente["obs"]}</td>";
+            // echo "<td>{$cliente["endereco"]}</td>";
+            echo "<td><a href='seleciona_cliente.php?id=" . $cliente['id'] . "'>Ver</a>";
+            // echo "<button type='button' class='btn btn-link' onclick='confirmacao({$cliente['id']});'>Deletar</button> </td>";
 
             echo '</tr>';
         }

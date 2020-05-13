@@ -1,7 +1,8 @@
 <?php
 require_once 'config.php';
 include 'view/header.php';
-
+?>
+<?php
 try {
 
     $sql = "SELECT * FROM usuario ORDER BY id ";

@@ -1,5 +1,5 @@
-<?php include 'header.php';?>
-<?php include 'footer.php';?>
+<?php include 'header.php'; ?>
+<?php include 'footer.php'; ?>
 
 <div class='container mt-4'>
     <table class="table">
@@ -186,15 +186,16 @@ $valorAtual = 2000;
 
 $valorAjustado = 0;
 
-function valorCorreto($valorAtual,&$valorAjustado){
+function valorCorreto($valorAtual, &$valorAjustado)
+{
     $valorAjustado = 1200;
 
-    return($valorAtual + $valorAjustado);
+    return ($valorAtual + $valorAjustado);
 }
 
 $totaldetudo = valorCorreto($valorAtual, $valorAjustado);
 
-echo"eu ganhava {$valorAtual} tive um aumento de {$valorAjustado} e agora to ganhando {$totaldetudo}";
+echo "eu ganhava {$valorAtual} tive um aumento de {$valorAjustado} e agora to ganhando {$totaldetudo}";
 
 
 
@@ -216,18 +217,22 @@ for($i=1; $i < 10; $i++){ ?>
 
 <?php
 $num = 1999.9;
-$formattedNum = number_format($num)."<br>";
+$formattedNum = number_format($num) . "<br>";
 echo $formattedNum;
 $formattedNum = number_format($num, 2);
 echo $formattedNum;
 ?>
 <script>
- $(".ValoresItens").inputmask('R$ 999.999.999,99', { numericInput: true});
+    $(".ValoresItens").inputmask('R$ 999.999.999,99', {
+        numericInput: true
+    });
 </script>
- <form>
-  <label for="fname"><b>Valor R$</b></label><br>
-  <input type="text" id="valor" name="valordaporratoda" value="00,00"><br>
+<form>
+    <label for="fname"><b>Valor R$</b></label><br>
+    <input type="text" id="valor" name="valordaporratoda" value="00,00"><br>
 </form>
+
+
 
 
 
